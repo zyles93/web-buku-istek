@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Book1 from '../assets/book1.jpg'
+
 const BestSeller = () => {
   return (
     <section id="best-seller " className="bg-warna-hover">
@@ -14,28 +17,12 @@ const BestSeller = () => {
                 </a>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-3 lg:py-12">
+            <div className="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-3 lg:py-12 ">
               <a href="" className="block">
                 <div className="aspect-w-1 aspect-h-1">
-                  <img loading="lazy" alt="Simple Watch" className="object-cover rounded" src="https://img.freepik.com/free-psd/book-cover-mockup_125540-572.jpg?w=996&t=st=1661403001~exp=1661403601~hmac=ad59fd8aa77b0648dda5686d2d57b44c5dddab2c5457a67b165f8c44e945e011" />
-                </div>
-                <div className="mt-2">
-                  <h5 className="font-medium">Simple Book</h5>
-                  <p className="mt-1 text-sm text-gray-700">$150</p>
-                </div>
-              </a>
-              <a href="" className="block">
-                <div className="aspect-w-1 aspect-h-1">
-                  <img loading="lazy" alt="Simple Watch" className="object-cover rounded" src="https://img.freepik.com/free-psd/book-cover-mockup_125540-572.jpg?w=996&t=st=1661403001~exp=1661403601~hmac=ad59fd8aa77b0648dda5686d2d57b44c5dddab2c5457a67b165f8c44e945e011" />
-                </div>
-                <div className="mt-2">
-                  <h5 className="font-medium">Simple Book</h5>
-                  <p className="mt-1 text-sm text-gray-700">$150</p>
-                </div>
-              </a>
-              <a href="" className="block">
-                <div className="aspect-w-1 aspect-h-1">
-                  <img loading="lazy" alt="Simple Watch" className="object-cover rounded" src="https://img.freepik.com/free-psd/book-cover-mockup_125540-572.jpg?w=996&t=st=1661403001~exp=1661403601~hmac=ad59fd8aa77b0648dda5686d2d57b44c5dddab2c5457a67b165f8c44e945e011" />
+                  <Image 
+                  src={Book1} alt="Buku Gambar" className="max-w-full mx-auto " 
+                  />
                 </div>
                 <div className="mt-2">
                   <h5 className="font-medium">Simple Book</h5>

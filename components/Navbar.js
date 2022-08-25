@@ -3,13 +3,6 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  let Links = [
-    { name: "Home", ling: "/" },
-    { name: "Profile", ling: "/Profiles" },
-    { name: "Galleri", ling: "/Galleries" },
-    { name: "Kontak", ling: "/Conatcts" },
-  ];
-
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -24,11 +17,18 @@ const Navbar = () => {
             <h1 className="font-bold text-warna-green text-xl ">ISTEK-AK Press</h1>
           </Link>
           <ul className="hidden sm:flex gap-10  transition-all ease-in-out duration-300">
-            {Links.map((link) => (
-              <li className=" text-warna-slate font-normal text-sm hover:text-warna-green">
-                <Link href={link.ling}>{link.name}</Link>
-              </li>
-            ))}
+            <li className=" text-warna-slate font-normal text-sm hover:text-warna-green">
+              <Link href="/">Home</Link>
+            </li>
+            <li className=" text-warna-slate font-normal text-sm hover:text-warna-green">
+              <Link href="/Profiles">Profile</Link>
+            </li>
+            <li className=" text-warna-slate font-normal text-sm hover:text-warna-green">
+              <Link href="/Galleries">Galleri</Link>
+            </li>
+            <li className=" text-warna-slate font-normal text-sm hover:text-warna-green">
+              <Link href="/Conatct">Kontak</Link>
+            </li>
           </ul>
 
           {/* /// mobile Button ///*/}
@@ -45,11 +45,18 @@ const Navbar = () => {
             }
           >
             <ul>
-              {Links.map((link) => (
-                <li className="p-4 text-base rounded flex justify-center hover:bg-warna-green hover:text-warna-white">
-                  <Link href={link.ling}>{link.name}</Link>
-                </li>
-              ))}
+              <li className="p-4 text-base rounded flex justify-center hover:bg-warna-green hover:text-warna-white">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="p-4 text-base rounded flex justify-center hover:bg-warna-green hover:text-warna-white">
+                <Link href="/Profiles">Profile</Link>
+              </li>
+              <li className="p-4 text-base rounded flex justify-center hover:bg-warna-green hover:text-warna-white">
+                <Link href="/Galleries">Galleri</Link>
+              </li>
+              <li className="p-4 text-base rounded flex justify-center hover:bg-warna-green hover:text-warna-white">
+                <Link href="/Contact">Kontak</Link>
+              </li>
             </ul>
           </div>
         </div>
